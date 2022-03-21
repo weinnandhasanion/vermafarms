@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+@import "./variables";
+
+html,
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $text;
+    margin: 0;
+  }
+
+  div#nav {
+    padding: 40px;
+    background-color: $bg1;
+    margin: 0;
+    
+    img {
+      height: 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      li > a > img {
+        height: 32px;
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text;
+    filter: opacity(0.7);
+    transition: 0.1s;
+    &:hover {
+      filter: opacity(1);
+      color: inherit;
+    }
+  }
+
+  #waves-1 {
+    position: absolute;
+    bottom: -200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 0;
+
+    svg {
+      z-index: 0;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 70px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .btn-orange {
+    @extend .btn;
+    background-color: $orange;
+  }
+
+  .btn-outlined {
+    @extend .btn;
+    background-color: transparent;
+    color: $text;
+    border: 1px solid $text;
+  }
+
+  .btn-shadowed {
+    box-shadow: 0px 15px 42px 4px rgba(0, 0, 0, 0.32);
+  }
+
+  footer {
+    .upper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $bg1;
+      padding: 30px 60px;
+
+      button {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 7.5px 20px;
+      }
+
+      img {
+        height: 85px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        h1 {
+          font-size: 2rem;
+          font-weight: 900;
+        }
+
+        img {
+          height: 2rem;
+        }
+      }
+    }
+
+    .lower {
+      background-color: $green;
+
+      .footer-links {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding-block: 50px;
+
+        li > a {
+          color: white;
+          font-size: 1.2rem;
+        }
+      }
+
+      .logo-cont {
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 1.7rem;
+        }
+      }
+
+      .footer-sublinks {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+
+        ul {
+          list-style-type: none;
+          width: 40%;
+          display: flex;
+          justify-content: space-between;
+
+          li > a {
+            color: white;
+            filter: opacity(.2);
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "./sections";

@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+html,
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html p,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: #443636;
+  margin: 0;
+}
+
+html div#nav,
+body div#nav {
+  padding: 40px;
+  background-color: #EDD3C1;
+  margin: 0;
+}
+
+html div#nav img,
+body div#nav img {
+  height: 1rem;
+}
+
+html div#nav ul,
+body div#nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+html div#nav ul li > a > img,
+body div#nav ul li > a > img {
+  height: 32px;
+}
+
+html ul,
+body ul {
+  margin: 0;
+}
+
+html a,
+body a {
+  text-decoration: none;
+  color: #443636;
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+html a:hover,
+body a:hover {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+  color: inherit;
+}
+
+html #waves-1,
+body #waves-1 {
+  position: absolute;
+  bottom: -200px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  z-index: 0;
+}
+
+html #waves-1 svg,
+body #waves-1 svg {
+  z-index: 0;
+}
+
+html .btn, html .btn-orange, html .btn-outlined,
+body .btn,
+body .btn-orange,
+body .btn-outlined {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 70px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+html .btn-orange,
+body .btn-orange {
+  background-color: #F6914E;
+}
+
+html .btn-outlined,
+body .btn-outlined {
+  background-color: transparent;
+  color: #443636;
+  border: 1px solid #443636;
+}
+
+html .btn-shadowed,
+body .btn-shadowed {
+  -webkit-box-shadow: 0px 15px 42px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 15px 42px 4px rgba(0, 0, 0, 0.32);
+}
+
+html footer .upper,
+body footer .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EDD3C1;
+  padding: 30px 60px;
+}
+
+html footer .upper button,
+body footer .upper button {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 7.5px 20px;
+}
+
+html footer .upper img,
+body footer .upper img {
+  height: 85px;
+}
+
+html footer .upper a,
+body footer .upper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+html footer .upper a h1,
+body footer .upper a h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+html footer .upper a img,
+body footer .upper a img {
+  height: 2rem;
+}
+
+html footer .lower,
+body footer .lower {
+  background-color: #3C562C;
+}
+
+html footer .lower .footer-links,
+body footer .lower .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  padding-block: 50px;
+}
+
+html footer .lower .footer-links li > a,
+body footer .lower .footer-links li > a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+html footer .lower .logo-cont,
+body footer .lower .logo-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html footer .lower .logo-cont img,
+body footer .lower .logo-cont img {
+  height: 1.7rem;
+}
+
+html footer .lower .footer-sublinks,
+body footer .lower .footer-sublinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+html footer .lower .footer-sublinks ul,
+body footer .lower .footer-sublinks ul {
+  list-style-type: none;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html footer .lower .footer-sublinks ul li > a,
+body footer .lower .footer-sublinks ul li > a {
+  color: white;
+  -webkit-filter: opacity(0.2);
+          filter: opacity(0.2);
+  font-weight: 200;
+}
+
+section#section-one {
+  background-image: url("./../assets/homepage-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 105vh;
+}
+
+section#section-one div#product {
+  margin: auto 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#section-one div#product #heading-container {
+  width: 375px;
+  margin-top: 150px;
+}
+
+section#section-one div#product #heading-container h1 {
+  font-size: 2.7em;
+  font-weight: 900;
+}
+
+section#section-one div#product #heading-container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #B3A18F;
+  margin-block: 25px;
+}
+
+section#section-two {
+  background-color: #FEFAF8;
+  padding-bottom: 50px;
+}
+
+section#section-two div#heading {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#section-two div#heading div {
+  width: 30%;
+  text-align: center;
+}
+
+section#section-two div#heading div h1 {
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+
+section#section-two div#heading div p {
+  color: #B3A18F;
+  margin-block: 25px;
+}
+
+section#section-two div#photo-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+section#section-two div#photo-cont .my-card {
+  width: 298px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  border-radius: 35px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 15px 42px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 15px 42px 4px rgba(0, 0, 0, 0.32);
+}
+
+section#section-two div#photo-cont .my-card .img-cont {
+  width: inherit;
+  height: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#section-two div#photo-cont .my-card .img-cont img {
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#section-two div#photo-cont .my-card .text-cont {
+  background-color: white;
+  padding: 20px 35px;
+  text-align: center;
+  min-height: 100px;
+}
+
+section#section-two div#photo-cont .my-card .text-cont p {
+  font-size: 1.4rem;
+}
+/*# sourceMappingURL=index.css.map */
